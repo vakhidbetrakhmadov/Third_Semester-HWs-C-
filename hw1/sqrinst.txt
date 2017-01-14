@@ -1,0 +1,11 @@
+mov R1, 10 ;
+MoV R1,R2 ;
+SuB R2,1 ;
+AdD R3, R1 ;
+JMP R2, 7 ;
+JMP 3;
+SUB r1, 1 ;
+JMP r1, 10 ;
+JMP 2 ;
+PRN R3 ;
+HLT ;

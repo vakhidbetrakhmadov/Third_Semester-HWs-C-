@@ -1,0 +1,18 @@
+all :exe
+
+exe: CPU.o CPUProgram.o main.o
+	g++ -o exe CPU.p CPUProgram.o main.o
+
+CPU.o: CPU.cpp CPU.h
+	g++ -c CPU.cpp
+
+CPUProgram.o:CPUProgram.cpp CPUProgram.h
+	g++ -c CPUProgram.cpp
+
+main.o: main.cpp
+	g++ -c main.cpp
+
+clean:
+	rm exe *.o
+
+

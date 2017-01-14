@@ -1,0 +1,11 @@
+all :exe
+
+exe: _mainTester.o
+	g++ -o exe _mainTester.o
+
+_mainTester.o: _mainTester.cpp requiredIncs.h
+	g++ -c _mainTester.cpp 
+
+clean:
+	rm exe* *.o
+
